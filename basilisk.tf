@@ -59,7 +59,7 @@ resource "lxd_instance" "basilisk-vm-small" {
   project = "unmanaged"
   remote  = "basilisk"
 
-  image        = module.common-manticore-managed.cached_images.ubuntu-jammy.fingerprint
+  image        = module.common-basilisk-managed.cached_images.ubuntu-jammy.fingerprint
   profiles  = ["unmanaged"]
   ephemeral = false
   type      = "virtual-machine"
@@ -82,7 +82,7 @@ resource "lxd_instance" "basilisk-vm-medium" {
   project = "unmanaged"
   remote  = "basilisk"
 
-  image        = module.common-manticore-managed.cached_images.ubuntu-jammy.fingerprint
+  image        = module.common-basilisk-managed.cached_images.ubuntu-jammy.fingerprint
   profiles  = ["unmanaged"]
   ephemeral = false
   type      = "virtual-machine"
@@ -105,7 +105,7 @@ resource "lxd_instance" "basilisk-vm-regular" {
   project = "unmanaged"
   remote  = "basilisk"
 
-  image        = module.common-manticore-managed.cached_images.ubuntu-jammy.fingerprint
+  image        = module.common-basilisk-managed.cached_images.ubuntu-jammy.fingerprint
   profiles  = ["unmanaged"]
   ephemeral = false
   type      = "virtual-machine"
