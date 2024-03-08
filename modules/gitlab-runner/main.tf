@@ -7,7 +7,7 @@ resource "lxd_instance" "gitlab-runner" {
   project = var.project
   remote  = var.remote
 
-  image = var.image
+  image     = var.image
   profiles  = ["${var.project}"]
   ephemeral = false
   type      = "virtual-machine"
